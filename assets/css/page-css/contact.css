@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+.header {
+    display: flex;
+    grid-area: header; 
+    justify-content: space-around;
+    background-color:#19917C ;
+  
+  }
+  .header .icon {
+  margin-top: 15px;
+  width: 40px;
+  height: 40px;
+  }
+  .header .logo {
+  width: 75px;
+  height: 75px;
+  margin: 3px;
+  }
+  
+  
