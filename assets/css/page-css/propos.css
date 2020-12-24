@@ -5,15 +5,100 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     text-align: center;
+    overflow-x: hidden;
+
+  }
+  /*-------------------------------------------------------------------------------------
+
+                                  @@@GRID
+
+---------------------------------------------------------------------------------------*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 200px 200px 1fr 1fr 1fr 10px 300px;
+    gap: 40px 0px;
+    grid-template-areas:
+      "header header header header"
+      "description description description description"
+      "description description description description"
+      "categorie categorie categorie categorie"
+      "categorie categorie categorie categorie"
+      "carte carte carte carte"
+      "carte carte carte carte"
+      "footer footer footer footer";
   }
   
-.header {
+
+  .description { 
+    grid-area: description; 
+
+      height: 350px;
+      background-color:#A6FCED;
+      font-size: 20px;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+
+  .categorie { 
+    grid-area: categorie; 
+    background-color: #073B32;
+    padding: 20px;
+
+  }
+  .categorie h3 {
+    border: solid 1px black;
+    margin-bottom: 30px;
+    background-color: #A6FCED;
+    padding: 40px;
+  }
+  .first-categorie {
+    border: solid 1px black;
+    margin-bottom: 30px;
+    background-color: #A6FCED;
+    padding: 20px;
+  }
+  .second-categorie {
+    border: solid 1px black;
+    margin-bottom: 30px;
+    background-color: #A6FCED;
+    padding: 20px;
+  }
+  .third-categorie {
+    border: solid 1px black;
+    margin-bottom: 30px;
+    background-color: #A6FCED;
+    padding: 20px;
+  }
+  .four-categorie {
+    border: solid 1px black;
+    background-color: #A6FCED;
+    padding: 20px;
+  }
+
+  .carte { 
+    grid-area: carte; 
+  }
+
+
+  .footer { 
+    grid-area: footer; 
+  }
+/*-------------------------------------------------------------------------------------
+
+                                  @@@HEADER
+
+---------------------------------------------------------------------------------------*/
+  .header { 
+    grid-area: header; 
     display: flex;
     grid-area: header; 
     justify-content: space-around;
     background-color:#19917C ;
-  
   }
+
   .header .icon {
   margin-top: 15px;
   width: 40px;
@@ -24,5 +109,52 @@ body {
   height: 75px;
   margin: 3px;
   }
+  .icon:hover{
+    background-color:#BFE9E2;
+    border-radius: 50%;
+    width: 70px;
+  }
   
   
+/*-------------------------------------------------------------------------------------
+
+                                  @@@FOOTER
+
+---------------------------------------------------------------------------------------*/
+.footer { 
+  grid-area: footer; 
+
+  background-color: #0C816D;
+
+
+  justify-content: space-around;
+}
+
+.footer .icon{
+  
+  width: 40px;
+  height: 40px;
+}
+
+.footer p  {
+font-size: 30px ;
+text-decoration: underline;
+}
+
+.button-contact {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 100px;
+  background-color:black;
+  color: #19B69B;
+  font-size: 23px;
+  margin-top: 30px;
+  padding-left: 50px ;
+  padding-top: 30px;
+  text-align: center;
+}
+.button-contact:hover {
+  background-color: #343333;
+}
