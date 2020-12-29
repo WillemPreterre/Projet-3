@@ -129,7 +129,9 @@ body {
 
   justify-content: space-around;
 }
-
+a {
+  text-decoration: none;
+}
 .footer .icon{
   
   width: 40px;

@@ -124,7 +124,10 @@ margin: 3px;
 font-size: 30px ;
 text-decoration: underline;
 }
-
+ a {
+  text-decoration: none;
+  color: black;
+}
 .button-contact {
   display: flex;
   margin-left: auto;
