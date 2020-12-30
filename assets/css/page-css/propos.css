@@ -115,7 +115,35 @@ body {
     width: 70px;
   }
   
+  .popup-content{
+    background-color: #19917C;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    text-align: right;
+    padding: 10px;
+  }
+  label {
+    background-color: #19917C;
+    text-align: left;
+  }
+  #popup {
+    display: none;
+  }
+  #popup:target {
+    display: block;
+  }
+  #popup a.close-popup {
+    position:absolute;
+    top:-5px;
+    right:13px;
+    text-decoration:none;
+  }
   
+  input {
+    text-align: right;
+    color: #0C816D;
+  }
 /*-------------------------------------------------------------------------------------
 
                                   @@@FOOTER

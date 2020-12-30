@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   background-color: black;
@@ -6,10 +8,48 @@ body {
   overflow-x: hidden;
   text-align: center;
 }
+@media screen and (min-width: 1000px)
+{
+    .photo{
+      width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+    .description {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .description p {
+      margin: 50px;
+      margin-left: auto;
+    margin-right: auto;
+    }
+    .composant {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    
+    }
+
+    .commentaire {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+    .advice {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+}
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 80px 730px 450px 1fr 300px 400px 300px;
+    grid-template-rows: 0.1fr 730px 450px 1fr 300px 400px 300px;
     gap: 0px 0px;
     grid-template-areas:
       "header header header header"
@@ -20,7 +60,6 @@ body {
       "advice advice advice advice"
       "footer footer footer footer";
   }
-  
   .header {
     display: flex;
     grid-area: header; 
@@ -39,7 +78,35 @@ body {
   margin: 3px;
   }
   
+.popup-content{
+  background-color: #19917C;
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  text-align: right;
+  padding: 10px;
+}
+label {
+  background-color: #19917C;
+  text-align: left;
+}
+#popup {
+  display: none;
+}
+#popup:target {
+  display: block;
+}
+#popup a.close-popup {
+  position:absolute;
+  top:-5px;
+  right:13px;
+  text-decoration:none;
+}
 
+input {
+  text-align: right;
+  color: #0C816D;
+}
   /*-------------------------------------------------------------------------------------
 
                                   @@@FOOTER
@@ -94,13 +161,14 @@ text-decoration: none;
 .tour {
   background-color: #289D88;
   width: 350px;
-  height: 700px;
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
   border: 1px grey solid;
 }
-
+.tour button {
+  border: 1px solid grey;
+}
 .panier-button {
   height: 50px;
   background-color:black;
@@ -126,11 +194,14 @@ text-decoration: none;
 .photo { 
   grid-area: photo; 
   text-align: center;
+
+  height: 230px;
+}
+.photo-article {
   width: 230px;
   height: 230px;
   margin-top: 5px;
 }
-
 .photo-mini {
 text-align: center;
 width: 75px;
@@ -155,8 +226,8 @@ margin-left: 305px;
 
 
 .description { 
+  position: static;
   grid-area: description; 
-  margin: 10px;
   background-color:#289D88 ;
 }
 
@@ -212,7 +283,7 @@ margin-left: 305px;
 .advice { 
   grid-area: advice; 
   background-color:#90EBDB ;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .article-img {
