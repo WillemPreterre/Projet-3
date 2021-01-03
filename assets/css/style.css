@@ -1,6 +1,41 @@
 @media screen and (min-width: 1000px)
 {
-  .articleOne
+  .articleOne{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .articleTwo{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .articleThree{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .articleFour{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .articleFive{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .articleSix{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
 }
 body {
   margin: 0;
@@ -200,11 +235,10 @@ text-decoration: underline;
 
 .plus {
 
-width: 30px;
-height: 30px;
+width: 25px;
+height: 25px;
 border: 7px solid black;
 padding: 2px;
-margin-left: 275px;
 
 }
 
@@ -232,3 +266,7 @@ margin-left: 275px;
   width: 70px;
 }
 
+.buttonPlus{
+  background-color: #BFE9E2;
+  display: flex;
+}

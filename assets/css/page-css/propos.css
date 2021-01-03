@@ -1,4 +1,24 @@
+@media screen and (min-width: 1000px)
+{
+  .carte{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
 
+  }
+  .categorie{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .description{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
 body {
     margin: 0;
     background-color: black;
@@ -41,6 +61,9 @@ body {
       margin-top: 20px;
     }
 
+  a {
+  text-decoration: none;
+  }
 
   .categorie { 
     grid-area: categorie; 

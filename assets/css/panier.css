@@ -1,3 +1,11 @@
+@media screen and (min-width: 1000px)
+{
+  .articleOne {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 body {
     margin: 0;
     background-color: black;
@@ -13,69 +21,19 @@ body {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr 1fr 300px 300px;
+    grid-template-rows: 80px 1fr 300px 300px;
     gap: 40px 0px;
     grid-template-areas:
       "header header header header header header"
       "articleOne articleOne articleOne articleOne articleOne articleOne"
-      "articleTwo articleTwo articleTwo articleTwo articleTwo articleTwo"
-      "articleThree articleThree articleThree articleThree articleThree articleThree"
-      "articleFour articleFour articleFour articleFour articleFour articleFour"
-      "articleFive articleFive articleFive articleFive articleFive articleFive"
-      "articleSix articleSix articleSix articleSix articleSix articleSix"
       "article article article article article article"
       "footer footer footer footer footer footer";
   }
   
   .articleOne { 
   grid-area: articleOne; 
-  background-color: #ECECEC;
-  
-  width: 375px;
-  height: 375px;
   }
-  
-  .articleTwo {
-  grid-area:articleTwo;
-  background-color: #ECECEC;
-  
-  width: 375px;
-  height: 375px;
-  }
-  
-  
-  .articleThree { 
-  grid-area: articleThree; 
-  background-color: #ECECEC;
-  
-  width: 375px;
-  height: 375px;
-  }
-  
-  .articleFour { 
-    grid-area: articleFour; 
-    background-color: #ECECEC;
-  
-    width: 375px;
-    height: 375px;
-  }
-  
-  .articleFive { 
-    grid-area: articleFive; 
-    background-color: #ECECEC;
-  
-    width: 375px;
-    height: 375px;
-  }
-  
-  .articleSix { 
-    grid-area: articleSix;
-    background-color: #ECECEC;
-  
-    width: 375px;
-    height: 375px; 
-  }
-  
+
   .article {
       grid-area: article;
   }
@@ -144,6 +102,10 @@ body {
   
     justify-content: space-around;
   }
+    
+  a{
+    text-decoration: none;
+  }
   
   .footer .icon{
     
@@ -193,13 +155,14 @@ body {
     background-color: #8EE9D9;
   }
   
-  .plus{
+ .article-container .mini{
   
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border: 7px solid black;
   padding: 2px;
-  margin-left: 275px;
+  margin: 0px;
+  box-shadow: 0px 10px 13px -7px #000000, 0px 5px 15px 5px rgba(0,0,0,0);
   }
   
   .photo { 
@@ -257,4 +220,11 @@ body {
   }
   .button-article:hover {
     background-color: #38C8AF;
+  }
+  .all-buttonArticle{
+    background-color: #BFE9E2;
+    display: flex;
+  }
+  a {
+    text-decoration: none;
   }

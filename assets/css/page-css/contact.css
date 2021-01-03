@@ -1,3 +1,24 @@
+@media screen and (min-width: 1000px)
+{
+  .carte{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .formulaire{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .contact{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
 body {
   margin: 0;
   background-color: black;
@@ -25,7 +46,6 @@ body {
     background-color: #052923;
     border: 1px solid grey;
     height: 200px;
-    margin: 20px;
   }
   .contact-tour {
     border: 1px solid black;
@@ -40,7 +60,6 @@ body {
     grid-area: formulaire; 
     background-color: #073B32;
     border: 1px solid black;
-    margin: 10px;
     
   }
 
@@ -60,8 +79,8 @@ textarea {
 }
 
 .formulaire input {
-  width: 300px;
-  height: 55px;
+  width: 250px;
+  height: 45px;
 }
 
 .formulaire button {
@@ -98,34 +117,37 @@ textarea {
   }
   
   .popup-content{
-    background-color: #19917C;
-    position: absolute;
-    top: 10%;
-    right: 0%;
-    text-align: right;
-    padding: 10px;
-  }
-  label {
-    background-color: #19917C;
-    text-align: left;
-  }
-  #popup {
-    display: none;
-  }
-  #popup:target {
-    display: block;
-  }
-  #popup a.close-popup {
-    position:absolute;
-    top:-5px;
-    right:13px;
-    text-decoration:none;
-  }
-  
-  input {
-    text-align: right;
-    color: #0C816D;
-  }
+  background-color: #19917C;
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  text-align: right;
+  padding: 10px;
+}
+label {
+  text-align: left;
+}
+
+#popup {
+  display: none;
+}
+#popup:target {
+  display: block;
+}
+#popup a.close-popup {
+  position:absolute;
+  top:-5px;
+  right:13px;
+  text-decoration:none;
+}
+
+input {
+  text-align: right;
+  color: #0C816D;
+}
+a {
+  text-decoration: none;
+}
   /*-------------------------------------------------------------------------------------
 
                                   @@@FOOTER
