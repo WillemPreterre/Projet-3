@@ -1,8 +1,8 @@
 var removePanier = document.getElementsByClassName('all-buttonArticle')
 for (var i = 0; i < removePanier.length; i++) {
     var buttonRemove = removePanier[i]
-    buttonRemove.addEventListener('click', function(removeFunction) {
-        var removeButtonClicked = removeFunction.target.parentNode.parentNode.remove()
+    buttonRemove.addEventListener('click', function(event) {
+        var removeButtonClicked = event.target.parentNode.parentNode.remove()
         //target pour récuperer l'élément qui a déclanché un événement spécifique 
         //ParentNode pour récuperer le parent du parent pour supprimer l'article
     })
