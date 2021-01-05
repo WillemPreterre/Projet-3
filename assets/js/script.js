@@ -7,10 +7,11 @@ for (var i = 0; i < removePanier.length; i++) {
         //ParentNode pour récuperer le parent du parent pour supprimer l'article
     })
 }
+
 var addPanier = document.getElementsByClassName('buttonPlus')
 for (var i = 0; i < addPanier.length; i++) {
     var buttonAdd = addPanier[i]
-    buttonAdd.addEventListener('click', function(addFunction)  {
+    buttonAdd.addEventListener('click', function()  {
         console.log(buttonAdd)
     })
 }
@@ -18,7 +19,7 @@ for (var i = 0; i < addPanier.length; i++) {
 var addPanierDetail = document.getElementsByClassName('panier-button')
 for (var i = 0; i < addPanierDetail.length; i++) {
     var buttonAddDetail = addPanierDetail[i]
-    buttonAddDetail.addEventListener('click', function(addFunction)  {
+    buttonAddDetail.addEventListener('click', function()  {
         console.log(buttonAddDetail)
     })
 }
