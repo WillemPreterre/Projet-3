@@ -1,197 +1,199 @@
-@media screen and (min-width: 1000px)
-{
-  .carte{
+@media screen and (min-width:500px) {
+  .carte {
     width: 380px;
     margin-left: auto;
-    margin-right: auto;
-
+    margin-right: auto
   }
-  .categorie{
+
+  .categorie {
     width: 380px;
     margin-left: auto;
-    margin-right: auto;
-
+    margin-right: auto
   }
-  .description{
+
+  .description {
     width: 380px;
     margin-left: auto;
-    margin-right: auto;
-
+    margin-right: auto
   }
 }
+
 body {
-    margin: 0;
-    background-color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    overflow-x: hidden;
-
-  }
-  /*-------------------------------------------------------------------------------------
-
+  margin: 0;
+  background-color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  overflow-x: hidden
+}
+/*-------------------------------------------------------------------------------------
                                   @@@GRID
-
 ---------------------------------------------------------------------------------------*/
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 80px 200px 200px 1fr 1fr 1fr 10px 300px;
-    gap: 40px 0px;
-    grid-template-areas:
-      "header header header header"
-      "description description description description"
-      "description description description description"
-      "categorie categorie categorie categorie"
-      "categorie categorie categorie categorie"
-      "carte carte carte carte"
-      "carte carte carte carte"
-      "footer footer footer footer";
-  }
-  
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 200px 200px 1fr 1fr 1fr 10px 300px;
+  gap: 40px 0;
+  grid-template-areas: "header header header header"
+  "description description description description"
+  "description description description description"
+  "categorie categorie categorie categorie"
+  "categorie categorie categorie categorie"
+  "carte carte carte carte""carte carte carte carte"
+  "footer footer footer footer"
+}
 
-  .description { 
-    grid-area: description; 
-
-      height: 350px;
-      background-color:#A6FCED;
-      font-size: 20px;
-      text-align: center;
-      padding: 20px;
-      margin-top: 20px;
-    }
-
-  a {
-  text-decoration: none;
-  }
-
-  .categorie { 
-    grid-area: categorie; 
-    background-color: #073B32;
-    padding: 20px;
-
-  }
-  .categorie h3 {
-    border: solid 1px black;
-    margin-bottom: 30px;
-    background-color: #A6FCED;
-    padding: 40px;
-  }
-  .first-categorie {
-    border: solid 1px black;
-    margin-bottom: 30px;
-    background-color: #A6FCED;
-    padding: 20px;
-  }
-  .second-categorie {
-    border: solid 1px black;
-    margin-bottom: 30px;
-    background-color: #A6FCED;
-    padding: 20px;
-  }
-  .third-categorie {
-    border: solid 1px black;
-    margin-bottom: 30px;
-    background-color: #A6FCED;
-    padding: 20px;
-  }
-  .four-categorie {
-    border: solid 1px black;
-    background-color: #A6FCED;
-    padding: 20px;
-  }
-
-  .carte { 
-    grid-area: carte; 
-  }
-
-
-  .footer { 
-    grid-area: footer; 
-  }
-/*-------------------------------------------------------------------------------------
-
-                                  @@@HEADER
-
----------------------------------------------------------------------------------------*/
-  .header { 
-    grid-area: header; 
-    display: flex;
-    grid-area: header; 
-    justify-content: space-around;
-    background-color:#19917C ;
-  }
-
-  .header .icon {
-  margin-top: 15px;
-  width: 40px;
-  height: 40px;
-  }
-  .header .logo {
-  width: 75px;
-  height: 75px;
-  margin: 3px;
-  }
-  .icon:hover{
-    background-color:#BFE9E2;
-    border-radius: 50%;
-    width: 70px;
-  }
-  
-  .popup-content{
-    background-color: #19917C;
-    position: absolute;
-    top: 10%;
-    right: 0%;
-    text-align: right;
-    padding: 10px;
-  }
-  label {
-    background-color: #19917C;
-    text-align: left;
-  }
-  #popup {
-    display: none;
-  }
-  #popup:target {
-    display: block;
-  }
-  #popup a.close-popup {
-    position:absolute;
-    top:-5px;
-    right:13px;
-    text-decoration:none;
-  }
-  
-  input {
-    text-align: right;
-    color: #0C816D;
-  }
-/*-------------------------------------------------------------------------------------
-
-                                  @@@FOOTER
-
----------------------------------------------------------------------------------------*/
-.footer { 
-  grid-area: footer; 
-
-  background-color: #0C816D;
-
-
-  justify-content: space-around;
+.description {
+  grid-area: description;
+  height: 350px;
+  background-color: #a6fced;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px
+}
+.description h4 {
+  text-decoration: underline ;
+  font-size: 25px;
 }
 a {
-  text-decoration: none;
-}
-.footer .icon{
-  
-  width: 40px;
-  height: 40px;
+  text-decoration: none
 }
 
-.footer p  {
-font-size: 30px ;
-text-decoration: underline;
+.categorie {
+  grid-area: categorie;
+  background-color: #073b32;
+  padding: 20px
+}
+
+.categorie h3 {
+  border: solid 1px #000;
+  margin-bottom: 30px;
+  background-color: #a6fced;
+  padding: 40px
+}
+
+.first-categorie {
+  border: solid 1px #000;
+  margin-bottom: 30px;
+  background-color: #a6fced;
+  padding: 20px
+}
+
+.second-categorie {
+  border: solid 1px #000;
+  margin-bottom: 30px;
+  background-color: #a6fced;
+  padding: 20px
+}
+
+.third-categorie {
+  border: solid 1px #000;
+  margin-bottom: 30px;
+  background-color: #a6fced;
+  padding: 20px
+}
+
+.four-categorie {
+  border: solid 1px #000;
+  background-color: #a6fced;
+  padding: 20px
+}
+
+.carte {
+  grid-area: carte
+}
+
+.footer {
+  grid-area: footer
+}
+/*-------------------------------------------------------------------------------------
+                                  @@@HEADER
+---------------------------------------------------------------------------------------*/
+.header {
+  grid-area: header;
+  display: flex;
+  grid-area: header;
+  justify-content: space-around;
+  background-color: #19917c
+}
+
+.header .icon {
+  margin-top: 15px;
+  width: 40px;
+  height: 40px
+}
+
+.header .logo {
+  width: 75px;
+  height: 75px;
+  margin: 3px
+}
+
+.icon:hover {
+  background-color: #bfe9e2;
+  border-radius: 50%;
+  width: 70px
+}
+
+.popup-content {
+  background-color: #19917c;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  text-align: right;
+  padding: 10px;
+  text-decoration: none
+}
+.pc {
+  border: 1px solid black;
+  margin:5px
+}
+label {
+  background-color: #19917c;
+  text-align: left
+}
+
+#popup {
+  display: none
+}
+
+#popup:target {
+  display: block
+}
+
+#popup a.close-popup {
+  position: absolute;
+  top: -5px;
+  right: 13px;
+  text-decoration: none
+}
+
+input {
+  text-align: right;
+  color: #0c816d
+}
+/*-------------------------------------------------------------------------------------
+                                  @@@FOOTER
+---------------------------------------------------------------------------------------*/
+.footer {
+  grid-area: footer;
+  background-color: #0c816d;
+  justify-content: space-around
+}
+
+a {
+  text-decoration: none
+}
+
+.footer .icon {
+  width: 40px;
+  height: 40px
+}
+
+.footer p {
+  font-size: 30px;
+  text-decoration: underline
 }
 
 .button-contact {
@@ -200,14 +202,16 @@ text-decoration: underline;
   margin-right: auto;
   width: 280px;
   height: 100px;
-  background-color:black;
-  color: #19B69B;
+  background-color: #000;
+  color: #19b69b;
   font-size: 23px;
   margin-top: 30px;
-  padding-left: 50px ;
+  padding-left: 50px;
   padding-top: 30px;
-  text-align: center;
+  text-align: center
 }
+
 .button-contact:hover {
   background-color: #343333;
+  box-shadow:10px 10px black
 }
