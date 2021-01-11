@@ -173,6 +173,12 @@ input {
   text-align: right;
   color: #0c816d
 }
+body {
+  color: black;
+  background-color: white;
+  background-image: url(/projet-img/Image/fond-ecranSix.jpg); 
+  background-size: 100vw 100vh;
+}
 /*-------------------------------------------------------------------------------------
                                   @@@FOOTER
 ---------------------------------------------------------------------------------------*/

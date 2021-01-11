@@ -8,13 +8,13 @@ for (var i = 0; i < removePanier.length; i++) {
         //ParentNode pour récuperer le parent du parent pour supprimer l'article
     })
 }
+
 // Récupérer l'article via le bouton d'accueil
 var addPanier = document.getElementsByClassName('buttonPlus')
 for (var i = 0; i < addPanier.length; i++) {
     var buttonAdd = addPanier[i]
-    buttonAdd.addEventListener('click', function(event)  {
+    buttonAdd.addEventListener('click', function()  {
         console.log(buttonAdd)
-        //var AddButtonClicked = event.target.parentNode.parentNode.remove()
         //let panierPage = document.querySelector('.articleOne')
         //let indexPage = document.getElementsByClassName('articleAll')
         //sessionStorage.Change = document.querySelector('.articleOne')
@@ -27,7 +27,7 @@ for (var i = 0; i < addPanier.length; i++) {
 var addPanierDetail = document.getElementsByClassName('panier-button')
 for (var i = 0; i < addPanierDetail.length; i++) {
     var buttonAddDetail = addPanierDetail[i]
-    buttonAddDetail.addEventListener('click', function(addFunction)  {
+    buttonAddDetail.addEventListener('click', function(event)  {
         console.log(buttonAddDetail)
     })
 }
