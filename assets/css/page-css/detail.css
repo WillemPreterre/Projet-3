@@ -4,7 +4,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   overflow-x: hidden;
-  text-align: center
+  text-align: center;
+  box-sizing: border-box;
 }
 @media screen and (min-width:200px) {
   .photo {
@@ -80,7 +81,8 @@ body {
 .header .icon {
   margin-top: 15px;
   width: 40px;
-  height: 40px
+  height: 40px;
+  transition: all 250ms;
 }
 
 .header .logo {
@@ -126,7 +128,7 @@ input {
 body {
   color: black;
   background-color: white;
-  background-image: url(/projet-img/Image/fond-ecranSix.jpg); 
+  background-image: url(/projet-img/Image/fond-ecranDeux.jpg); 
   background-size: 100vw 100vh;
 }
 /*-------------------------------------------------------------------------------------
@@ -312,5 +314,8 @@ body {
 .icon:hover {
   background-color: #bfe9e2;
   border-radius: 50%;
-  width: 70px
+  width: 50px;
+  height:50px;
+  transition: all 250ms;
+
 }
