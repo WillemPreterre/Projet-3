@@ -23,7 +23,7 @@ var panierPage  = JSON.parse(sessionStorage.getItem("panierStorage"));
    //récupère le bouton
     var clickedPanier = document.getElementsByClassName('buttonPlus')
    console.log(clickedPanier)
-        clickedPanier.addEventListener('click', function(event) {
+        document.addEventListener('click', function(event) {
             console.log(panierPage)
             var addButtonClicked = event.target.parentNode.parentNode
             panierPage.push(addButtonClicked)
