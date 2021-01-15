@@ -132,8 +132,7 @@ a {
 }
 
 .icon:hover {
-  background-color: #bfe9e2;
-  border-radius: 50%;
+
   width: 50px;
   height:50px;
   transition: all 250ms;
@@ -223,5 +222,5 @@ a {
 
 .button-contact:hover {
   background-color: #343333;
-  box-shadow:10px 10px black
+  box-shadow:5px 5px black
 }
