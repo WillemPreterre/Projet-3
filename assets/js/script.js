@@ -1,5 +1,7 @@
  //Enlever un élément du panier
+ //récupère le bouton moins
 var removePanier = document.getElementsByClassName('all-buttonArticle')
+//boucle pour récupérer tous les éléments "moins" 
 for (var i = 0; i < removePanier.length; i++) {
     var buttonRemove = removePanier[i]
     buttonRemove.addEventListener('click', function(event) {
@@ -11,21 +13,23 @@ for (var i = 0; i < removePanier.length; i++) {
 
 // Récupérer l'article via le bouton d'accueil        
 
+//Récupérer l'information depuis le stockage
 var panierPage  = JSON.parse(sessionStorage.getItem("panierStorage"));
    if (panierPage != null){
        sessionStorage.setItem("panierStorage", JSON.stringify(panierPage));  
    } else {
      panierPage = [];
    }
-    var clickedPanier = document.getElementsByTagName('buttonPlus')
+   //récupère le bouton
+    var clickedPanier = document.getElementsByClassName('buttonPlus')
    console.log(clickedPanier)
-        this.addEventListener('click', function(event) {
+        clickedPanier.addEventListener('click', function(event) {
             console.log(panierPage)
             var addButtonClicked = event.target.parentNode.parentNode
             panierPage.push(addButtonClicked)
             console.log(panierPage)
-
         })
+
         //Permet de tranferer vers le storage
         sessionStorage.setItem("PanierStorage", JSON.stringify(panierPage));
 
