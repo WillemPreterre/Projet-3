@@ -1,3 +1,26 @@
+ 
+// Récupérer l'article via le bouton d'accueil        
+
+//Récupérer l'information depuis le stockage
+var panierPage  = JSON.parse(sessionStorage.getItem("panierStorage"));
+   if (panierPage != null){
+       sessionStorage.setItem("panierStorage", JSON.stringify(panierPage));  
+   } else {
+     panierPage = [];
+   }
+   //récupère le bouton
+    var clickedPanier = document.getElementsByClassName('buttonPlus')
+    console.log(clickedPanier)
+        document.addEventListener('click', function(event) {
+            console.log(panierPage)
+            var addButtonClicked = event.target.parentNode.parentNode
+            panierPage.push(addButtonClicked)
+            console.log(panierPage)
+        })
+
+        //Permet de tranferer vers le storage
+        sessionStorage.setItem("PanierStorage", JSON.stringify(panierPage));
+
  //Enlever un élément du panier
  //récupère le bouton moins
 var removePanier = document.getElementsByClassName('all-buttonArticle')
@@ -10,28 +33,6 @@ for (var i = 0; i < removePanier.length; i++) {
         //ParentNode pour récuperer le parent du parent pour supprimer l'article
     })
 }
-
-// Récupérer l'article via le bouton d'accueil        
-
-//Récupérer l'information depuis le stockage
-var panierPage  = JSON.parse(sessionStorage.getItem("panierStorage"));
-   if (panierPage != null){
-       sessionStorage.setItem("panierStorage", JSON.stringify(panierPage));  
-   } else {
-     panierPage = [];
-   }
-   //récupère le bouton
-    var clickedPanier = document.getElementsByClassName('buttonPlus')
-   console.log(clickedPanier)
-        document.addEventListener('click', function(event) {
-            console.log(panierPage)
-            var addButtonClicked = event.target.parentNode.parentNode
-            panierPage.push(addButtonClicked)
-            console.log(panierPage)
-        })
-
-        //Permet de tranferer vers le storage
-        sessionStorage.setItem("PanierStorage", JSON.stringify(panierPage));
 
 //session LocalStorage permet de sauvegarder ce que l'on veut pour le réutiliser plus tard
 
