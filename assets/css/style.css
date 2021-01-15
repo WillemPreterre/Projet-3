@@ -59,7 +59,14 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr 1fr 300px;
   gap: 40px 0;
-  grid-template-areas: "header header header header header header""articleOne articleOne articleOne articleOne articleOne articleOne""articleTwo articleTwo articleTwo articleTwo articleTwo articleTwo""articleThree articleThree articleThree articleThree articleThree articleThree""articleFour articleFour articleFour articleFour articleFour articleFour""articleFive articleFive articleFive articleFive articleFive articleFive""articleSix articleSix articleSix articleSix articleSix articleSix""footer footer footer footer footer footer"
+  grid-template-areas: "header header header header header header"
+  "articleOne articleOne articleOne articleOne articleOne articleOne"
+  "articleTwo articleTwo articleTwo articleTwo articleTwo articleTwo"
+  "articleThree articleThree articleThree articleThree articleThree articleThree"
+  "articleFour articleFour articleFour articleFour articleFour articleFour"
+  "articleFive articleFive articleFive articleFive articleFive articleFive"
+  "articleSix articleSix articleSix articleSix articleSix articleSix"
+  "footer footer footer footer footer footer"
 }
 
 .articleOne {
@@ -120,7 +127,8 @@ body {
 .header .icon {
   margin-top: 15px;
   width: 40px;
-  height: 40px
+  height: 40px;
+  transition: all 250ms;
 }
 
 .header .logo {
@@ -255,7 +263,10 @@ a {
 .icon:hover {
   background-color: #bfe9e2;
   border-radius: 50%;
-  width: 70px
+  width: 50px;
+  height:50px;
+  transition: all 250ms;
+
 }
 
 .buttonPlus {
